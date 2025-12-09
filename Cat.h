@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 09:51:39 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/08 09:57:23 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/09 14:21:02 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ class Cat : public Animal
         Cat(const Cat& obj);
         Cat& operator=(const Cat& obj);
         ~Cat();
+
+        void makeSound() const;
 };
 #endif 

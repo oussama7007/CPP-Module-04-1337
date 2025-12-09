@@ -1,20 +1,20 @@
-
-
-Name = Animal
+NAME = Animal  
 
 CPP = c++ -Wall -Wextra -Werror -std=c++98
 
-SRC = Animal.cpp Cat.cpp Dog.cpp main.cpp 
 
+SRC = Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp main.cpp 
 
 OBJ = ${SRC:.cpp=.o}
+
+all: ${NAME} 
 
 ${NAME} : ${OBJ}
 	${CPP} ${OBJ} -o $@
 
 
-%.o:%.cpp Cat.h Dog.h Animal.h
-	${CPP}  -c $< -o $@
+%.o:%.cpp Animal.h Cat.h Dog.h WrongAnimal.h WrongCat.h
+	${CPP} -c $< -o $@
 
 clean :
 	rm -f ${OBJ}
@@ -22,5 +22,4 @@ clean :
 fclean: clean 
 	rm -f ${NAME}
 
-re : fclean all 
-	
+re : fclean all
