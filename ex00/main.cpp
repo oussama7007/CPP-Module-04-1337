@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 09:48:48 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/09 17:48:41 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/09 19:11:30 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,20 @@ int main()
     
 
     //  WrongAnimal a;
-     WrongCat b;
-    // const WrongAnimal* wrongMeta = &a;
-    const WrongAnimal* wrongCat =  &b;//new WrongCat();
+    //  WrongCat b;
+    const WrongAnimal* wrongMeta = new WrongAnimal(); //&a;
+    const WrongAnimal* wrongCat =  new WrongCat(); //&b;
 
     std::cout << wrongCat->getType() << " " << std::endl;
 
 
     wrongCat->makeSound(); 
-    // wrongMeta->makeSound();
+    wrongMeta->makeSound();
 
-    // delete wrongCat;
-    // delete wrongMeta;
+    delete wrongCat;
+    delete wrongMeta;
+
+
 
     return 0;
 }
