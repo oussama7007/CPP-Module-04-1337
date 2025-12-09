@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 09:48:48 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/09 17:22:56 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/09 17:48:41 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ int main()
     std::cout << j->getType() << " " << std::endl;
     std::cout << i->getType() << " " << std::endl;
 
-    i->makeSound(); // will output the cat sound!
-    j->makeSound(); // will output the dog sound!
+    i->makeSound(); //
+    j->makeSound();
     meta->makeSound();
 
     delete j;
@@ -37,19 +37,17 @@ int main()
 
     std::cout << std::endl << "=== Testing Wrong Polymorphism ===" << std::endl;
     
-    // --- WRONG TEST (No Virtual) ---
-     WrongAnimal a;
+
+    //  WrongAnimal a;
      WrongCat b;
-    const WrongAnimal* wrongMeta = &a;
-    const WrongAnimal* wrongCat =  &b;
+    // const WrongAnimal* wrongMeta = &a;
+    const WrongAnimal* wrongCat =  &b;//new WrongCat();
 
     std::cout << wrongCat->getType() << " " << std::endl;
 
-    // ISSUE HERE: Because makeSound() is NOT virtual in WrongAnimal,
-    // the pointer 'wrongCat' (which is of type WrongAnimal*) will call
-    // the WrongAnimal version, NOT the WrongCat version.
+
     wrongCat->makeSound(); 
-    wrongMeta->makeSound();
+    // wrongMeta->makeSound();
 
     // delete wrongCat;
     // delete wrongMeta;
