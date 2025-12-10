@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:19:48 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/10 15:34:35 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/10 18:46:04 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 #define DOG_HPP
 
 #include "Animal.h"
-
+#include "Brain.h"
 
 class Dog : public Animal {
+    private:
+        Brain* brain;
     public:
         Dog();
         Dog(const Dog& other);
