@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:08:48 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/11 17:08:51 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/11 18:23:42 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int main()
 
     // --- Test 2: Standard Polymorphism (MUST WORK) ---
     std::cout << "--- Testing Valid Subclasses ---" << std::endl;
-    
+    Animal horse ;
     const Animal* dog = new Dog();
     const Animal* cat = new Cat();
 
