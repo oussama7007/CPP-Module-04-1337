@@ -19,15 +19,11 @@
 
 int main()
 {
-    // --- Test 1: Try to create an Animal (MUST FAIL) ---
-    // Uncommenting the following line should cause a compiler error:
-    // "cannot allocate an object of abstract type 'Animal'"
-    
+        
     // const Animal* meta = new Animal(); 
-
-    // --- Test 2: Standard Polymorphism (MUST WORK) ---
+    // Animal horse ;
     std::cout << "--- Testing Valid Subclasses ---" << std::endl;
-    Animal horse ;
+
     const Animal* dog = new Dog();
     const Animal* cat = new Cat();
 
