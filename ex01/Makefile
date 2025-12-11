@@ -3,7 +3,7 @@ NAME = Animal
 CPP = c++ -Wall -Wextra -Werror -std=c++98
 
 
-SRC = Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp main.cpp  Brain.cpp
+SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
