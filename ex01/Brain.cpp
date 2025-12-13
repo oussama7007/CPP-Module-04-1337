@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:20:02 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/13 17:16:08 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/13 17:18:05 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,4 @@ Brain& Brain::operator=(const Brain& obj)
 Brain::~Brain()
 {
     std::cout << "Brain Destructor called" << std::endl;
-}  
+}   
