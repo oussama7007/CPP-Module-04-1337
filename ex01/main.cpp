@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:28:31 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/13 17:05:15 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/13 17:33:48 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ int main()
         animals[i] = new Cat();
     }
 
-    
     animals[0]->makeSound(); // Woof
     animals[size - 1]->makeSound(); // Meow
 
