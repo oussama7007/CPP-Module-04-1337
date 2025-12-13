@@ -6,13 +6,12 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:20:02 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/10 18:44:57 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/13 17:09:26 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Brain.h"
 
-// Default Constructor
 Brain::Brain()
 {
     std::cout << "Brain Default Constructor called" << std::endl;

@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:28:31 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/11 14:19:38 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/13 17:05:15 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,17 @@
 
 
 
-void    f()
-{
-    system("leaks Animal");
-}
+// void    f()
+// {
+//     system("leaks Animal");
+// }
 int main()
 {
-    atexit(f);
+    // atexit(f);
     std::cout << "--- 1. ARRAY TEST (Subject Requirement) ---" << std::endl;
     const int size = 4; 
     const Animal* animals[size];
-
+    
  
     for (int i = 0; i < size / 2; i++) {
         animals[i] = new Dog();

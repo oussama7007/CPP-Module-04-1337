@@ -1,21 +1,39 @@
-SRC = main.cpp AMateria.cpp Ice.cpp Cure.cpp ICharacter.cpp Character.cpp	\
-	  IMateriaSource.cpp MateriaSource.cpp
-OBJ = $(SRC:.cpp=.o)
-CC = c++
-RM = rm -f
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98 
-
 NAME = Materia
+
+CC = c++
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+
+SRC = main.cpp \
+      AMateria.cpp \
+      Character.cpp \
+      Cure.cpp \
+      Ice.cpp \
+      MateriaSource.cpp \
+      ICharacter.cpp \
+      IMateriaSource.cpp
+
+INC = AMateria.h \
+      Character.h \
+      Cure.h \
+      Ice.h \
+      MateriaSource.h \
+      ICharacter.h \
+      IMateriaSource.h
+
+OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
+%.o: %.cpp $(INC)
+	$(CC) $(CPPFLAGS) -c $< -o $@
+
 clean:
-	$(RM) $(OBJ)
+	rm -f $(OBJ)
 
 fclean: clean
-	$(RM) $(NAME)
+	rm -f $(NAME)
 
-re: fclean $(NAME)
+re: fclean all
