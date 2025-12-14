@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:08:48 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/14 18:34:53 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/14 18:52:58 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,13 +56,13 @@ int main()
         Ice ice;
         Cure cure;
         std::cout << "[Before] Ice type: " << ice.getType() << std::endl;
-    std::cout << "[Before] Cure type: " << cure.getType() << std::endl;
+        std::cout << "[Before] Cure type: " << cure.getType() << std::endl;
     
-    AMateria& IceRef = ice;
-    AMateria& cureRef = cure;
+        AMateria* IceRef = &ice;
+        AMateria* cureRef = &crue;
     
-    std::cout << "Assigning cure to is ....\n";
-    IceRef = cureRef;
-    std::cout << "[after] ice type :" << ice.getType() << std::endl;
+        std::cout << "Assigning cure to is ....\n";
+        // IceRef = cureRef;
+        std::cout << "[after] ice type :" << ice.getType() << std::endl;
     
 }
