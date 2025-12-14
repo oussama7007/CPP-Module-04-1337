@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:19:57 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/11 14:10:11 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/14 13:34:19 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,5 @@ Cat::~Cat() {
 }
 
 void Cat::makeSound() const {
-    std::cout << "Meow!" << std::endl;
+    std::cout << "Meow!" << std::endl; 
 }
