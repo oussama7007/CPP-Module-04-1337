@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 15:59:53 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/13 15:59:55 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/14 17:28:49 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@ MateriaSource::MateriaSource(const MateriaSource& other) {
 
 MateriaSource& MateriaSource::operator=(const MateriaSource& other) {
     if (this != &other) {
-        // Delete old templates
+        
         for (int i = 0; i < 4; i++) {
             if (this->templates[i])
                 delete this->templates[i];
         }
-        // Copy new templates
+      
         for (int i = 0; i < 4; i++) {
             if (other.templates[i])
                 this->templates[i] = other.templates[i]->clone();

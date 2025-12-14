@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 15:59:44 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/13 16:47:51 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/14 16:37:26 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 class MateriaSource : public IMateriaSource
 {
     private:
-        AMateria* templates[4]; // Stores the "blueprints"
+        AMateria* templates[4];
 
     public:
         MateriaSource();

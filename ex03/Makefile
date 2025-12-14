@@ -9,8 +9,8 @@ SRC = main.cpp \
       Cure.cpp \
       Ice.cpp \
       MateriaSource.cpp \
-      ICharacter.cpp \
-      IMateriaSource.cpp
+      
+      
 
 INC = AMateria.h \
       Character.h \

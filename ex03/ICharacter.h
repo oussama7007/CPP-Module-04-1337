@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 18:06:56 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/14 16:34:45 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/14 16:47:43 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 
 #include <iostream>
+
 class AMateria;
 
 class ICharacter
