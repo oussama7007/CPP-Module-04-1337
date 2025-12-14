@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 18:05:09 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/14 17:24:28 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/14 17:47:33 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ AMateria::AMateria(const AMateria& other)
 
 AMateria& AMateria::operator=(const AMateria& other)
 {
-    // Subject Requirement: "copying the type doesn't make sense"
+    
     (void)other;
     return *this;
 }
