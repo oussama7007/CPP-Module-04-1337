@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 16:18:11 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/11 16:18:18 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/14 15:41:16 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,7 @@ Animal::~Animal() {
     std::cout << "Animal Destructor" << std::endl;
 }
 
-void Animal::makeSound() const {
-    std::cout << "* Generic Animal Sound *" << std::endl;
-}
+
 
 std::string Animal::getType() const {
     return this->type;
