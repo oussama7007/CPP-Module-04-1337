@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 14:48:15 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/13 14:48:20 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/14 20:17:10 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ class Character : public ICharacter
 {
     private:
         std::string _name;
-        AMateria* _inventory[4]; // The inventory array
+        AMateria* _inventory[4]; 
 
     public:
         Character(std::string const & name);
