@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 18:05:09 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/15 19:01:15 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/15 19:02:09 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ AMateria& AMateria::operator=(const AMateria& other)
 
 AMateria::~AMateria()
 {
-    // std::cout << "AMateria destr" << std::endl;
 }
 
 std::string const & AMateria::getType() const
