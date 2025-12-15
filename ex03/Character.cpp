@@ -6,12 +6,20 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 15:16:10 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/14 17:54:05 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/15 18:59:04 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "Character.h"
+
+Character::Character() : _name("default")
+{
+    for (int i = 0; i < 4; i++)
+        this->_inventory[i] = NULL;
+    
+}
+
 
 Character::Character(std::string const & name) : _name(name)
 {

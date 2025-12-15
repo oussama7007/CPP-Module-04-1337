@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 18:05:11 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/14 16:47:36 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/15 19:00:51 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class AMateria
     protected:
         std::string type;
     public:
+        AMateria();
         AMateria(std::string const & type);
         AMateria(const AMateria& other);
         AMateria& operator=(const AMateria& other);

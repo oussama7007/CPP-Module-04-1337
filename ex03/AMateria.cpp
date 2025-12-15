@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 18:05:09 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/15 16:13:59 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/15 19:01:15 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,19 @@
 #include "AMateria.h"
 #include "ICharacter.h" 
 
+
+AMateria::AMateria() : type("default") {
+    
+}
+
 AMateria::AMateria(std::string const & type) : type(type)
 {
-    // std::cout << "AMateria constr" << std::endl;
+   
 }
 
 AMateria::AMateria(const AMateria& other)
 {
-    // std::cout << "AMateria copy constr" << std::endl;
+   
     *this = other;
 }
 

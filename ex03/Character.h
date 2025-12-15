@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 14:48:15 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/14 20:17:10 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/15 18:58:17 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class Character : public ICharacter
         AMateria* _inventory[4]; 
 
     public:
+        Character();
         Character(std::string const & name);
         Character(const Character& other);
         Character& operator=(const Character& other);
