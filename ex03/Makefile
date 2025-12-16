@@ -1,7 +1,7 @@
 NAME = Materia
 
 CC = c++
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98 #-fsanitize=address
  
 SRC = main.cpp \
       AMateria.cpp \
