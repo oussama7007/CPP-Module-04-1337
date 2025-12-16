@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:08:48 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/16 17:04:16 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/16 17:11:49 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,6 @@ int main() {
 
     testSubject();
     testMateriaSource();
-  
     testDeepCopy();
     
 
