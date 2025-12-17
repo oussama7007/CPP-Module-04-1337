@@ -6,7 +6,7 @@
 /*   By: oait-si- <oait-si-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 15:16:10 by oait-si-          #+#    #+#             */
-/*   Updated: 2025/12/15 18:59:04 by oait-si-         ###   ########.fr       */
+/*   Updated: 2025/12/17 16:43:58 by oait-si-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,7 @@ void Character::equip(AMateria* m)
 void Character::unequip(int idx)
 {
     if (idx >= 0 && idx < 4)
-        this->_inventory[idx] = NULL; 
+        this->_inventory[idx] = NULL;  
 
 }
 
